@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Love Who?</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="s.css">
+</head>
+<body>
+
+  <!-- The rounded button -->
+  <button class="love-button" onclick="showLove()">I love who?</button>
+
+  <!-- Hidden text that will appear when the button is clicked -->
+  <h1 id="answer" class="hidden">SHALINI</h1>
+
+  <!-- Confetti container -->
+  <div id="confetti"></div>
+
+  <!-- Simple script to handle button click -->
+  <script>
+    function showLove() {
+      // Show the hidden answer text
+      document.getElementById('answer').classList.remove('hidden');
+      // Add confetti effect by adding a class
+      document.getElementById('confetti').classList.add('confetti');
+    }
+  </script>
+
+</body>
+</html>
